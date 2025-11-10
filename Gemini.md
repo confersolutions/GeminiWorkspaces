@@ -44,6 +44,13 @@ This directory, `/Users/yatinkarnik/Workspace/GeminiWorkspaces`, serves as the b
 4.  **Missing Context:** If a project's main `<Project>.md` file is missing or empty, you may offer to scaffold it based on a template, but **do not create or edit it automatically**. Proceed only after my explicit confirmation.
 5.  You may also use optional dry-run and validation behaviors defined in `_templates/actions_index.md` (e.g., a `VALIDATE WORKSPACE` command) to safely inspect changes before committing them.
 
+6. **Master Task List (Optional):** Each project may maintain a high-level task overview at `<Project>/tasks/master_tasks.md`. This file:
+   - Lists major tasks (Task 1, Task 2, etc.) with rollup status
+   - Links to detailed subtask files
+   - Serves as a navigation dashboard
+   - Is based on `_templates/master_tasks_template.md`
+   - Should be referenced in the project's main `<Project>.md` file for easy access
+
 ## Template Maintenance Rule
 Whenever new template or guide files are created inside `_templates/`, Gemini should:
 1. Announce that `_templates/actions_index.md` may need updating.
@@ -78,6 +85,11 @@ When a task is referenced by ID (e.g., "task 3.1"):
 ### 2025-11-09 14:11 CST (Initial Release)
 - Established core workspace structure.
 - Created action templates and dispatch system.
+
+### 2025-11-09 15:39:52 CST
+- Introduced Master Task List convention for project-level task tracking
+- Added master_tasks_template.md to _templates/
+- Updated actions_index.md with Master Task List documentation
 
 ## Error Recovery
 
