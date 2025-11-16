@@ -17,30 +17,19 @@
 # ============================================================================
 
 # ----------------------------------------------------------------------------
-# CLIENT PROJECTS - CONFIDENTIAL
+# PRIVATE WORKSPACES - ALL CONFIDENTIAL CONTENT
 # ----------------------------------------------------------------------------
-# MoXi: Client engagement with sensitive business documents, API keys,
-#       mortgage disclosures, and proprietary chatbot designs
-MoXi/
-
-# ----------------------------------------------------------------------------
-# COMPANY INTELLECTUAL PROPERTY
-# ----------------------------------------------------------------------------
-# ConferSolutionsAI: Internal frameworks, company assets, credentials,
-#                    n8n automation configs, email server details
-ConferSolutionsAI/
-
-# ----------------------------------------------------------------------------
-# PERSONAL & PRIVATE WORKSPACES
-# ----------------------------------------------------------------------------
-# Personal: User's private experiments, notes, and personal tasks
-Personal/
-
-# Odyssey: Undefined project - keeping private until explicitly public
-Odyssey/
-
-# Temp: Ephemeral scratchpad workspace (not meant for version control)
-Temp/
+# All client projects, company IP, personal work, and temporary files
+# are organized under the _private/ directory for clear separation
+# from public instructional content.
+#
+# Contents of _private/:
+#   - MoXi/ - Client engagement (API keys, business documents, disclosures)
+#   - ConferSolutionsAI/ - Company IP (credentials, n8n configs, infrastructure)
+#   - Personal/ - Personal experiments and notes
+#   - Odyssey/ - Private project workspace
+#   - Temp/ - Ephemeral scratchpad
+_private/
 
 # ----------------------------------------------------------------------------
 # SYSTEM & ENVIRONMENT FILES
@@ -116,7 +105,6 @@ ENV/
 .idea/
 *.swp
 *.swo
-*~
 
 # ----------------------------------------------------------------------------
 # BACKUP & TEMPORARY FILES
