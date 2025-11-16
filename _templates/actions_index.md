@@ -13,6 +13,20 @@ When an action command is issued (e.g., “CREATE TASK” or “STORE HISTORY”
 | **COMPLETE TASK** | Mark a task or subtasks as done. | `_templates/complete_task.md` | “Complete task 3.1.” |
 | **STORE CONTEXT / STORE HISTORY** | Append reasoning and summary of the current chat session. | `_templates/store_context.md` | “STORE HISTORY for task 3.1.” |
 
+## Master Task List Convention
+
+Each project may maintain a master task list at `<Project>/tasks/master_tasks.md` based on `_templates/master_tasks_template.md`.
+
+**Purpose:**
+- Provides high-level overview of major tasks (Task 1, Task 2, etc.)
+- Links to detailed subtask files (task-1.1-*.md, task-1.2-*.md, etc.)
+- Tracks rollup status: a major task is "Completed" only when all its subtasks are done
+
+**Maintenance:**
+- Update manually or via explicit instruction when major task status changes
+- This is NOT automatically updated by CREATE/UPDATE/COMPLETE/STORE commands
+- The master list serves as a navigation and status dashboard
+
 ## Rules for Gemini
 
 1. Always consult this file first to find which guide applies to the given command.  
